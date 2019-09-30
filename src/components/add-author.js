@@ -42,6 +42,7 @@ export default class AddAuthor extends Component {
         <div className="form-container">
           <label>Author's name: </label>
           <input
+            className="input-text"
             type="text"
             required
             value={this.state.author}

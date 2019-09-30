@@ -2,14 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-// export default class BookList extends Component {
-//   render() {
-//     return (
-//       <div>List of books</div>
-//     )
-//   }
-// }
-
 export default class BookList extends Component {
   constructor(props) {
     super(props);
@@ -50,7 +42,7 @@ export default class BookList extends Component {
           <td>{book.author}</td>
           <td>
             <Link to={"/editbook/"+book.id}>edit</Link>
-             | 
+            |
             <a href="#" onClick={() => {this.deleteBook(book.id)}}>delete</a>
           </td>
         </tr>

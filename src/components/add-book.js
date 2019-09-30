@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -63,11 +62,9 @@ export default class AddBook extends Component {
   render() {
     return (
     <div>
-      <div>
-        Add a new book
-      </div>
+      <h3>Add a new book</h3>
       <form onSubmit={this.onSubmit}>
-        <div>
+        <div className="form-container">
           <label>Title</label>
           <input 
             type="text"
@@ -86,11 +83,11 @@ export default class AddBook extends Component {
                 </option>
               })}
           </select>
-
+          </div>
           <div className="form-submit">
           <input type="submit" value="Add Book" />
         </div>
-        </div>
+        
       </form>
     </div>
     )

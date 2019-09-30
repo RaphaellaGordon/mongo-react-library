@@ -5,20 +5,22 @@ export default class Navbar extends Component {
   render() {
     return (
       <nav>
-        <Link to="/">Library</Link>
-        <div>
+        <div className="nav-container">
           <ul>
             <li>
-              <Link to="/addauthor">Add Author</Link>
+              <Link id="homepage-link" className="nav-link" to="/books">Library</Link>
             </li>
             <li>
-              <Link to="/authors">Authors</Link>
+              <Link className="nav-link" to="/addauthor">Add Author</Link>
             </li>
             <li>
-              <Link to="/addbook">Add Book</Link>
+              <Link className="nav-link" to="/authors">Authors</Link>
             </li>
             <li>
-              <Link to="/books">Books</Link>
+              <Link className="nav-link" to="/addbook">Add Book</Link>
+            </li>
+            <li>
+              <Link className="nav-link" to="/books">Books</Link>
             </li>
           </ul>
         </div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -30,7 +29,7 @@ export default class AuthorList extends Component {
       return this.state.authors.map(author => {
         return (
           <tr key={author.id}>
-            <td>{author.name}</td>
+            <td className="test">{author.name}</td>
           </tr>
         )
       })
